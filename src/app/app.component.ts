@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import {NgFor} from "@angular/common";
 import {TasksListComponent} from "./tasks-list/tasks-list.component";
 
 export type Task = {
@@ -9,7 +8,7 @@ export type Task = {
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [NgFor, TasksListComponent],
+  imports: [TasksListComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
